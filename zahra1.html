@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahra</title>
+    <style>
+        body 
+        
+        
+        
+        {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 4px;
+            padding: 8px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+            .product img {
+                width: 100%;
+                height: auto;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .product:hover img {
+                transform: scale(1.2);
+            }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .product-details {
+            animation: fadeIn 1s ease-out;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .product:hover .product-details {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+
+    <header>
+
+        <h1>Zahra</h1>
+        <b> الأختيار الأول في شراء الملابس </b>
+    </header>
+ 
+    
+    <section>
+
+        <div class="product">
+            <h1> الأولاد</h1>
+
+            <a href="https://aliyasereidd.github.io/aallaa/zahra2.html"target="_parent"><img src="https://m.media-amazon.com/images/I/71de4VaiE9L._AC_SX522_.jpg" alt="Clothing 1"></a>
+            <div class="product-details">
+
+            </div>
+        </div>
+
+        <div class="product">
+            <h1>البنات </h1>
+            <a href="https://aliyasereidd.github.io/avav/%D8%A7%D9%84%D8%A8%D9%86%D8%A7%D8%AA.html" target="_parent">
+    <img src="https://m.media-amazon.com/images/I/61-y7Hf4LsL._AC_SX679_.jpg" alt="Clothing 2">
+</a>
+
+            
+            <div class="product-details">
+
+            </div>
+        </div>
+
+        <!-- Add more products here -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fashion Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahra</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 90px;
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            margin: 8px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+            .product img {
+                width: 100%;
+                height: auto;
+                transition: transform 0.5s ease-in-out;
+            }
+
+            .product:hover img {
+                transform: scale(1.2);
+            }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .animated-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            animation: fadeInOut 4s infinite;
+        }
+
+
+        .product-details {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 215, 0, 0.8);
+            padding: 10px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .product:hover .product-details {
+            opacity: 1;
+        }
+
+        .add-to-cart {
+            background-color: #FFD700;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+            .add-to-cart:hover {
+                background-color: #FFC700;
+            }
+
+        footer {
+            background-color: #eeeeee;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <section>
+        <div class="product">
+            <h1>الرجال</h1>
+            <a href="https://aliyasereidd.github.io/bbbbbbbb/%D8%A7%D9%84%D8%B1%D8%AC%D8%A7%D9%84%20.html" target="_parent">
+                       <img src="https://m.media-amazon.com/images/I/61MhPYK0GzL._AC_SX425_.jpg" alt="Clothing 1">
+            </a>
+           
+            <div class="product-details">
+
+
+            </div>
+        </div>
+
+        <div class="product">
+            <h1>النساء </h1>
+          
+                <a href="https://aliyasereidd.github.io/vvvvvvvvvvvvv/pvdld.html" target="_parent">
+                    <img src="https://m.media-amazon.com/images/I/71BOCsTwhDL._AC_SX522_.jpg" alt="Clothing 2">
+                </a>
+            
+            
+            <div class="product-details">
+
+
+            </div>
+        </div>
+
+        <!-- Add more products here -->
+
+    </section>
+
+   <section>
+      <button>
+
+
+           <a href="https://www.instagram.com/aliyaser_2?igsh=MWZ6bm9mNjQzaHBvbQ==">
+               <header>
+                   <h1> تمتع بالعروض الحصرية من زهرة</h1>
+
+               </header>
+           </a>
+
+       </button>
+       
+            
+      
+   </section>
+
+
+    <footer>
+        <p>
+            &copy; 2024Zahra
+            . All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
+
+
+
